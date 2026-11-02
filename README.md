@@ -51,4 +51,4 @@ curl -X POST http://localhost:8080/endpoint \
 - Ожидаемый результат: `{"result":"OK"}`
 - Фактический результат: код 400, `{"result":"ERROR","message":"token: должно соответствовать \"^[0-9A-F]{32}$\""}`
 
-Этот случай проверяет тест `RequestValidationTest.loginWithLettersGToZTokenTest`. Он падает, поэтому временно отключён через `@Disabled`. После исправления дефекта аннотацию нужно убрать.
+Этот сценарий проверяет тест `RequestValidationTest.loginWithLettersGToZTokenTest`. Он падает, поэтому временно отключён через `@Disabled`. После исправления дефекта аннотацию нужно убрать.
